@@ -70,23 +70,23 @@ export function newUtente() {
 }
 
 export function inviaMessaggio() {
-	// //controllo i dati immessi
-	// var mittente = document.getElementById('mittente').value;
-	// // mittente.readOnly = true;
-	// var destinatario = document.getElementById("destinatario").value;
-	// var testo = document.getElementById("messaggio").value;
-	// if (mittente.trim() == "") {
-	// 	alert("mittente non specificato");
-	// 	return;
-	// }
-	// if (destinatario.trim() == "") {
-	// 	alert("destinatario non specificato");
-	// 	return;
-	// }
-	// if (testo.trim() == "") {
-	// 	alert("messaggio vuoto");
-	// 	return;
-	// }
+	//controllo i dati immessi
+	var mittente = document.getElementById('mittente').value;
+	// mittente.readOnly = true;
+	var destinatario = document.getElementById("destinatario").value;
+	var testo = document.getElementById("messaggio").value;
+	if (mittente.trim() == "") {
+		alert("mittente non specificato");
+		return;
+	}
+	if (destinatario.trim() == "") {
+		alert("destinatario non specificato");
+		return;
+	}
+	if (testo.trim() == "") {
+		alert("messaggio vuoto");
+		return;
+	}
 
 	var Message = {};
 	Message.mittente = mittente.value;
