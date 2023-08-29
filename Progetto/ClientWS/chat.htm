@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>WSJSChat</title>
+	<script type="text/javascript" src="scripts/wsocket.js"></script>
+	<link type="text/css" href="styles/default.css" rel="stylesheet">
+	</link>
+</head>
+
+<body>
+
+	<form name="Chat">
+		<div class="center">
+			<div class="left">
+				<label>Da </label><input class="mittente" type="text" id=mittente onchange="newUtente()">
+				<br /><br />
+				<label>A </label><input class="destinatario" type="text" id=destinatario>
+				<br /><br />
+				<textarea id="messaggio">inserisci qui il messaggio</textarea>
+				<br /><br />
+				<input type="button" class="invia" onclick="myFunction();" value="Invia messaggio">
+			</div>
+			<div class="right">
+				<legend>Cronologia: </legend>
+				<div id="cronologia">
+					<!-- <div class="space">
+						<div class="inviato">
+							<div class="info">
+								<div class="nome">Tu</div>
+								<div class="ora">12:46</div>
+							</div>
+							<div class="testo">
+								Ciao
+							</div>
+						</div>
+					</div>
+					<div class="space">
+						<div class="ricevuto">
+							<div class="info">
+								<div class="nome">Sajad</div>
+								<div class="ora">12:46</div>
+							</div>
+							<div class="testo">
+								Ciao, come stai?
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</form>
+
+</body>
+
+
+
+</html>
